@@ -62,6 +62,9 @@ gulp.task('build', ['clean', 'scss', 'img'], function() {
 	var buildCss = gulp.src('app/styles/**/*')
 	.pipe(gulp.dest('docs/styles'));
 
+	var buildFonts = gulp.src('app/fonts/**/*')
+	.pipe(gulp.dest('docs/fonts'));
+
 	var buildJs = gulp.src('app/script.js')
 	.pipe(gulp.dest('docs'));
 });
