@@ -1144,9 +1144,7 @@ body {
     .awards__list {
       margin-top: 159px; }
     .awards__item {
-      max-width: 127px;
-      margin-left: 30px;
-      margin-right: 30px; }
+      max-width: 127px; }
     .awards__picture {
       width: 126px;
       height: 126px; }
@@ -1230,6 +1228,17 @@ body {
     margin-top: -50px;
     -webkit-background-size: 100% 150%;
             background-size: 100% 150%; }
+    .footer.nowinners {
+      margin-top: 0 !important;
+      -webkit-transform: none !important;
+          -ms-transform: none !important;
+              transform: none !important; }
+      .footer.nowinners .footer__logo {
+        margin-top: 85px; }
+      .footer.nowinners::before {
+        top: 42px; }
+      .footer.nowinners::after {
+        top: 40px; }
     .footer::before {
       top: 178px; }
     .footer::after {
