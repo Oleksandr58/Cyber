@@ -1,0 +1,25 @@
+// FONTS
+
+@font-face {
+    font-family: "BookAntiqua";
+    font-style: normal;
+    src: url('../fonts/BookAntiqua.woff') format('woff'),
+         url('../fonts/BookAntiqua.woff2') format('woff2'),
+         url('../fonts/BookAntiqua.TTF') format('ttf');
+}
+
+@font-face {
+    font-family: "Trajan";
+    font-style: normal;
+    src: url('../fonts/Trajan.woff') format('woff'),
+         url('../fonts/Trajan.woff2') format('woff2'),
+         url('../fonts/Trajan.TTF') format('ttf');
+}
+
+// COLORS
+
+$main-color: #ffffff;
+$title-color: #eef4b1;
+$special-color: #d4c7b1;
+$repost-color: #bafed0;
+$prize-title-color: #d2d0cf;
