@@ -760,7 +760,7 @@ body {
     padding: 17px 20px 0; } }
 
 @media (max-width: 1230px) {
-  body::after {
+  .panel {
     display: none; }
   .prize {
     margin-top: -140px;
@@ -878,7 +878,12 @@ body {
           -ms-transform: translateX(-17px);
               transform: translateX(-17px); }
   .prize__prize img {
-    width: 100%; } }
+    width: 100%; }
+  .winners__footer {
+    -webkit-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+            transform: translateY(10px);
+    padding: 0 50px; } }
 
 @media (max-width: 800px) {
   .prize__item:last-child {
