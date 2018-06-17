@@ -54,6 +54,16 @@ table {
 body {
   background: black;
   overflow-x: hidden; }
+  body::after {
+    content: '';
+    display: block;
+    height: 385px;
+    width: 10px;
+    background: url("../img/main__right.png") no-repeat;
+    position: fixed;
+    right: 49px;
+    top: 244px;
+    z-index: 5; }
 
 .header {
   max-width: 1320px;
@@ -138,15 +148,6 @@ body {
     max-width: 912px;
     margin: 0 auto;
     position: relative; }
-    .top__content::after {
-      content: '';
-      display: block;
-      height: 100%;
-      width: 15px;
-      background: url("../img/main__right.png") no-repeat;
-      position: absolute;
-      right: -145px;
-      top: 150px; }
   .top__repost {
     font-family: "BookAntiqua";
     font-size: 20px;
@@ -277,6 +278,7 @@ body {
   .prize__img {
     position: relative;
     width: 140px;
+    margin: 0 auto;
     height: 204px;
     background: url("../img/prize__border.png"); }
     .prize__img img {
@@ -284,7 +286,7 @@ body {
       top: -40px;
       left: -22px; }
   .prize__caption {
-    margin: 0 0 48px -40px;
+    margin: 0 0 48px 0;
     position: relative;
     height: 91px; }
     .prize__caption::before {
@@ -612,6 +614,7 @@ body {
     text-align: center; }
   .winners__title {
     background: url("../img/winners__title_bg.png") no-repeat;
+    background-position: 50% 0;
     height: 72px;
     margin: 30px 0 17px;
     text-shadow: 0 2px 4px #000000;
@@ -635,6 +638,7 @@ body {
             justify-content: space-between;
     padding: 60px 0 106px;
     -webkit-mask-image: url("../img/winners__mask.png");
+            mask-image: url("../img/winners__mask.png");
     -webkit-mask-size: 200%;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: bottom center;
@@ -681,9 +685,9 @@ body {
           background-size: 100% 85%;
   height: 200px;
   position: relative;
-  -webkit-transform: translateY(-30px);
-      -ms-transform: translateY(-30px);
-          transform: translateY(-30px);
+  -webkit-transform: translateY(-90px);
+      -ms-transform: translateY(-90px);
+          transform: translateY(-90px);
   text-align: center; }
   .footer::before {
     content: "";
@@ -734,6 +738,8 @@ body {
     padding: 17px 20px 0; } }
 
 @media (max-width: 1230px) {
+  body::after {
+    display: none; }
   .prize {
     margin-top: -140px;
     padding: 7px 0 23px;
@@ -904,6 +910,11 @@ body {
       height: 16px; }
       .links__item img {
         width: 10px; }
+      .links__item--red {
+        width: 24px;
+        height: 24px; }
+        .links__item--red img {
+          width: 13px; }
   .top {
     -webkit-background-size: 100% 100%;
             background-size: 100%;
@@ -1018,7 +1029,64 @@ body {
       max-width: 268px;
       margin: 0 auto; }
       .participation__bottom::before, .participation__bottom::after {
-        display: none; } }
+        display: none; }
+  .winners {
+    margin: 37px 0 0; }
+    .winners__key {
+      font-size: 18px;
+      line-height: 39.02px; }
+    .winners__title {
+      font-size: 20px;
+      line-height: 39.02px;
+      padding-top: 13px;
+      margin: 14px 0 32px; }
+    .winners__wrap {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-mask-image: url("../img/winners__mob_mask.png");
+              mask-image: url("../img/winners__mob_mask.png");
+      -webkit-mask-size: 100%;
+      padding: 0;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-align-content: center;
+          -ms-flex-line-pack: center;
+              align-content: center; }
+    .winners__row {
+      margin: 0 auto;
+      max-width: 250px;
+      -webkit-transform: translateX(-18px);
+          -ms-transform: translateX(-18px);
+              transform: translateX(-18px); }
+    .winners__winner {
+      font-size: 16px;
+      line-height: 36.32px;
+      margin-bottom: 25px; }
+    .winners__footer {
+      max-width: 291px;
+      font-size: 14px;
+      line-height: 20px;
+      margin: -190px auto 0; }
+  .footer {
+    margin-top: -50px;
+    -webkit-background-size: 100% 150%;
+            background-size: 100% 150%; }
+    .footer::before {
+      top: 178px; }
+    .footer::after {
+      top: 178px; }
+    .footer__logo {
+      margin: 218px auto 0;
+      width: 174px; }
+    .footer__links {
+      margin: 24px auto 39px;
+      width: 130px;
+      padding-left: 0; } }
 
 @media (max-width: 639px) {
   .top__repost {
