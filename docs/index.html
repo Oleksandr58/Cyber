@@ -8,6 +8,15 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:300,700" rel="stylesheet">
   <link type="text/css" href="styles/main.css" rel="stylesheet" media="screen">
   <title>Maincast BattlePass - выиграй поездку на TI8</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120899072-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120899072-1');
+  </script>
 </head>
 
 <body>
@@ -177,11 +186,11 @@
         </ul>
 
         <div class="participation__form">
-          <form action="" class="form">
+          <form action="" class="form js-form">
             <div class="form__title">Регистрация</div>
             <input type="text" class="form__input" name="vk" placeholder="Аккаунт ВК">
             <input type="text" class="form__input" name="twitter" placeholder="Аккаунт Twitter">
-            <input type="text" class="form__input" name="other" placeholder="Steam Trade Offer">
+            <input type="text" class="form__input" name="steam" placeholder="Steam Trade Offer">
             <button type="submit" class="form__btn">Готово</button>
           </form>
         </div>
@@ -267,11 +276,11 @@
 </section>
 
 <section class="modal js-modal">
-  <form action="" class="form">
+  <form action="" class="form js-form">
     <div class="form__title">Регистрация</div>
     <input type="text" class="form__input" name="vk" placeholder="Аккаунт ВК">
     <input type="text" class="form__input" name="twitter" placeholder="Аккаунт Twitter">
-    <input type="text" class="form__input" name="other" placeholder="Steam Trade Offer">
+    <input type="text" class="form__input" name="steam" placeholder="Steam Trade Offer">
     <button type="submit" class="form__btn">Готово</button>
   </form>
 </section>

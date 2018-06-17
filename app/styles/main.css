@@ -787,6 +787,8 @@ body {
     font-family: "BookAntiqua";
     font-size: 14px;
     margin-bottom: 17px; }
+    .form__input.novalid {
+      border-bottom: 3px #c80000 solid; }
     .form__input:focus {
       border-bottom: 3px rgba(4, 134, 4, 0.5) solid; }
     .form__input::-webkit-input-placeholder {
@@ -832,7 +834,7 @@ body {
 
 .modal {
   position: fixed;
-  background: black;
+  background: rgba(0, 0, 0, 0.85);
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -857,7 +859,8 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+            transform: translate(-50%, -50%);
+    opacity: 1; }
 
 @media (max-width: 1340px) {
   .header {

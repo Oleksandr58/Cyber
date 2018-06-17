@@ -776,6 +776,10 @@ body {
         font-size: 14px;
         margin-bottom: 17px;
 
+        &.novalid {
+            border-bottom: 3px rgb(200, 0, 0) solid;
+        }
+
         &:focus {
             border-bottom: 3px rgba(4,134,4, 0.5) solid;
         }
@@ -807,7 +811,7 @@ body {
 
 .modal {
     position: fixed;
-    background: rbga(0,0,0, 0.5);
+    background: rgba(0, 0, 0, 0.85);
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -826,6 +830,7 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        opacity: 1;
     }
 }
 

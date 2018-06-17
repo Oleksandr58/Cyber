@@ -46,4 +46,21 @@ window.onload = function() {
     $(".js-modal").on("click", function(event) {
         if ($(event.target).hasClass("js-modal")) $(this).removeClass("active");
     });
+
+    $(".js-form").on("submit", function(event) {
+
+        $(this).find(".form__input.novalid").removeClass("novalid");
+        
+        if (! $(this).find('.form__input[name="vk"]').val().trim().length && ! $(this).find('.form__input[name="twitter"]').val().trim().length) {
+            
+            event.preventDefault(); 
+            $(this).find('.form__input[name="vk"]').addClass("novalid");
+             $(this).find('.form__input[name="twitter"]').addClass("novalid");
+        }
+        
+        if (! $(this).find('.form__input[name="steam"]').val().trim().length) {
+            event.preventDefault();
+            $(this).find('.form__input[name="steam"]').addClass("novalid");
+        } 
+    });
 };
