@@ -24,4 +24,17 @@ window.onload = function() {
     Array.from(players).forEach(function (player) {
     player.addEventListener('click', loadPlayer, config)
     })
+
+
+
+    $(window).scroll(function() {
+        $('.js-scroll').each(function(){
+          var imagePos = $(this).offset().top;
+          var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow + 100) {
+            $(".panel__points-item.active").removeClass("active");
+            $($(".panel__points-item")[+$(this).data("position")]).addClass("active");
+          }
+        });
+      });
 };

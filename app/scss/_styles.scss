@@ -1,18 +1,6 @@
 body {
     background: black;
     overflow-x: hidden;
-
-    &::after {
-        content: '';
-        display: block;
-        height: 385px;
-        width: 10px;
-        background: url("../img/main__right.png") no-repeat;
-        position: fixed;
-        right: 49px;
-        top: 244px;
-        z-index: 5;
-    }
 }
 
 .header {
@@ -83,7 +71,7 @@ body {
         padding-top: 80px;
         display: flex;
         align-items: center;
-        max-width: 912px;
+        max-width: 952px;
         margin: 0 auto;
         position: relative;
     }
@@ -711,6 +699,50 @@ body {
         font-size: 38px;
     }
 }
+
+.panel {
+    position: fixed;
+    top: 238px;
+    right: 29px;
+    z-index: 5;
+
+    &__points {
+        width: 20px;
+
+        &-item {
+            width: 7px;
+            height: 7px;
+            margin: 0 auto;
+            border-radius: 50%;
+            margin-bottom: 67px;
+            background-color: #999999;
+            position: relative;
+
+            &.active {
+                width: 11px;
+                height: 11px;
+                border: 2px solid #eef4b1;
+                background-color: transparent;
+            }
+
+            &::after {
+                content: "";
+                height: 58px;
+                width: 1px;
+                border-left: 1px dashed #999999;
+                position: absolute;
+                top: 160%;
+                left: 50%
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}   
 
 @media (max-width: 1340px) {
     .header {

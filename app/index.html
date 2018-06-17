@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header js-scroll" data-position="0">
     <img class="header__logo" src="img/logo.png" alt="Logo">
 
     <div class="header__title">Выиграй призы в <strong class="header__key keys">MC Battle Pass</strong></div>
@@ -27,7 +27,7 @@
   </header>
 
   <main>
-    <section class="top">
+    <section class="top js-scroll"  data-position="0">
         <div class="top__content">
           <div class="top__repost">
               Сейчас <span>12 333</span> подписчиков
@@ -40,7 +40,7 @@
         </h1>
     </section>
 
-    <section class="prize">
+    <section class="prize js-scroll"  data-position="1">
         <div class="prize__item prize__item--title">
           <h2 class="prize__title">
               Необходимая цифра для старта розыгрыша приза — это суммарное количество подписчиков Dota 2 Maincast в ВК и twitter
@@ -123,7 +123,7 @@
         </div>
     </section>
 
-    <section class="awards">
+    <section class="awards js-scroll"  data-position="2">
       <h2 class="awards__title">
         После достижения каждой цели активируются промежуточные награды, которые будут распределены и разыграны на протяжении 8 дней квалификаций
       </h2>
@@ -165,12 +165,12 @@
       </div>
     </section>
 
-    <section class="participation">
+    <section class="participation js-scroll"  data-position="3">
       <h2 class="participation__title">Чтобы принять участие нужно:</h2>
 
       <div class="participation__wrap">
         <ul class="participation__rules">
-          <li class="participation__item">Подписаться на Dota 2 Maincast в ВК или подписаться на Dota 2 Maincast в Twitter: <a class="participation__link" href="https://twitter.com/dota2mc_ru" target="_blank">twitter.com/dota2mc_ru</a></li>
+          <li class="participation__item">Подписаться на Dota 2 Maincast в ВК или Twitter: <a class="participation__link" href="https://twitter.com/dota2mc_ru" target="_blank">twitter.com/dota2mc_ru</a></li>
           <li class="participation__item">Заполнить форму на сайте</li>
           <li class="participation__item">Сделать репост или ретвит главного поста. Можно и то, и другое — тогда ваши шансы увеличатся.</li>
           <li class="participation__item">Открыть свои ЛС в ВК и Твиттер</li>
@@ -187,11 +187,11 @@
       </div>
     </section>
 
-    <section class="js-youtube_player stream" data-video-id="https://player.twitch.tv/?channel=dota2mc_ru?autoplay=1">
+    <section class="js-youtube_player stream js-scroll" data-video-id="https://player.twitch.tv/?channel=dota2mc_ru?autoplay=1"  data-position="4">
       <img src="img/stream.jpg" alt="custom-preview">
     </section>
 
-    <section class="winners">
+    <section class="winners js-scroll"  data-position="5">
       <div class="winners__key keys">MC Battle Pass</div>
       <h2 class="winners__title">Победили</h2>
 
@@ -249,6 +249,18 @@
     </footer>
   </main>
 
+  <section class="panel">
+    <ul class="panel__points">
+        <li data-to="home" class="panel__points-item active"></li>
+        <li data-to="rules" class="panel__points-item"></li>
+        <li data-to="commands" class="panel__points-item panel__points-item_active"></li>
+        <li data-to="analytics-cs-go" class="panel__points-item"></li>
+        <li data-to="analytics-dota" class="panel__points-item"></li>
+        <li data-to="translation" class="panel__points-item"></li>
+    </ul>
+</section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="script.js"></script>
 </body>
 
