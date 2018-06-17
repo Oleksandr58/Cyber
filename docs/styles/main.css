@@ -167,6 +167,7 @@ body {
     padding: 35px 77px;
     text-transform: uppercase;
     text-decoration: none;
+    cursor: pointer;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s; }
@@ -522,10 +523,12 @@ body {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .participation__rules {
-    max-width: 640px;
-    margin: 0 auto; }
+    max-width: 640px; }
   .participation__item {
     padding: 0 0 0 121px;
     text-shadow: 0 2px 4px #000000;
@@ -550,8 +553,8 @@ body {
     text-decoration: none;
     color: #368f4f;
     cursor: pointer; }
-  .participation__video {
-    cursor: pointer; }
+  .participation__form {
+    margin-right: 100px; }
   .participation__bottom {
     opacity: 0.7;
     text-shadow: 0 2px 4px #000000;
@@ -755,6 +758,106 @@ body {
       .panel__points-item:last-child::after {
         display: none; }
 
+.form {
+  width: 302px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #ffffff;
+  text-align: center; }
+  .form__title {
+    color: #fefefe;
+    font-family: "BookAntiqua";
+    font-size: 18px;
+    background-color: #048604;
+    padding: 17px 0 13px 16px;
+    text-align: left;
+    margin-bottom: 35px;
+    -webkit-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0; }
+  .form__input {
+    border: none;
+    padding: 5px 0;
+    width: -webkit-calc(100% - 44px);
+    width: calc(100% - 44px);
+    margin: 0 auto;
+    border-bottom: 3px rgba(0, 0, 0, 0.5) solid;
+    outline: none;
+    color: #000000;
+    font-family: "BookAntiqua";
+    font-size: 14px;
+    margin-bottom: 17px; }
+    .form__input:focus {
+      border-bottom: 3px rgba(4, 134, 4, 0.5) solid; }
+    .form__input::-webkit-input-placeholder {
+      opacity: 0.5;
+      color: #000000;
+      font-family: "BookAntiqua";
+      font-size: 14px; }
+    .form__input::-moz-placeholder {
+      opacity: 0.5;
+      color: #000000;
+      font-family: "BookAntiqua";
+      font-size: 14px; }
+    .form__input:-ms-input-placeholder {
+      opacity: 0.5;
+      color: #000000;
+      font-family: "BookAntiqua";
+      font-size: 14px; }
+    .form__input::-ms-input-placeholder {
+      opacity: 0.5;
+      color: #000000;
+      font-family: "BookAntiqua";
+      font-size: 14px; }
+    .form__input::placeholder {
+      opacity: 0.5;
+      color: #000000;
+      font-family: "BookAntiqua";
+      font-size: 14px; }
+  .form__btn {
+    margin: 10px auto 40px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #048604;
+    color: #fefefe;
+    font-family: "BookAntiqua";
+    font-size: 12px;
+    padding: 9px 70px;
+    cursor: pointer;
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s; }
+    .form__btn:hover {
+      background-color: #035403; }
+
+.modal {
+  position: fixed;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  -o-transition: transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s; }
+  .modal.active {
+    display: block;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+  .modal .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
 @media (max-width: 1340px) {
   .header {
     padding: 17px 20px 0; } }
@@ -822,7 +925,16 @@ body {
   .top__repost {
     padding: 80px; }
   .top__btn {
-    padding: 30px; } }
+    padding: 30px; }
+  .participation__form {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-right: 0; }
+    .participation__form .form {
+      margin: 0 auto; }
+  .participation__rules {
+    margin: 0 auto; } }
 
 @media (max-width: 940px) {
   .awards {

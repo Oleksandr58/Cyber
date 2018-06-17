@@ -32,7 +32,7 @@
           <div class="top__repost">
               Сейчас <span>12 333</span> подписчиков
           </div>
-          <a class="top__btn" href="">Принять участие</a>
+          <a class="top__btn js-participate">Принять участие</a>
         </div>
 
         <h1 class="top__title">
@@ -176,9 +176,15 @@
           <li class="participation__item">Открыть свои ЛС в ВК и Твиттер</li>
         </ul>
 
-        <!-- <div class="js-youtube_player participation__video" data-video-id="https://www.youtube.com/embed/Ll7CnvGx3vk?autoplay=1">
-          <img src="img/youtube.jpg" alt="custom-preview">
-        </div> -->
+        <div class="participation__form">
+          <form action="" class="form">
+            <div class="form__title">Регистрация</div>
+            <input type="text" class="form__input" name="vk" placeholder="Аккаунт ВК">
+            <input type="text" class="form__input" name="twitter" placeholder="Аккаунт Twitter">
+            <input type="text" class="form__input" name="other" placeholder="Steam Trade Offer">
+            <button type="submit" class="form__btn">Готово</button>
+          </form>
+        </div>
       </div>
 
       <div class="participation__bottom">
@@ -260,10 +266,15 @@
     </ul>
 </section>
 
-<form action="" class="form modal">
-  <div class="form__header">Регистрация</div>
-  
-</form>
+<section class="modal js-modal">
+  <form action="" class="form">
+    <div class="form__title">Регистрация</div>
+    <input type="text" class="form__input" name="vk" placeholder="Аккаунт ВК">
+    <input type="text" class="form__input" name="twitter" placeholder="Аккаунт Twitter">
+    <input type="text" class="form__input" name="other" placeholder="Steam Trade Offer">
+    <button type="submit" class="form__btn">Готово</button>
+  </form>
+</section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="script.js"></script>

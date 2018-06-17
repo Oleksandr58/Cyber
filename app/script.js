@@ -31,10 +31,19 @@ window.onload = function() {
         $('.js-scroll').each(function(){
           var imagePos = $(this).offset().top;
           var topOfWindow = $(window).scrollTop();
-          if (imagePos < topOfWindow + 100) {
+          if (imagePos < topOfWindow + 200) {
             $(".panel__points-item.active").removeClass("active");
             $($(".panel__points-item")[+$(this).data("position")]).addClass("active");
           }
         });
-      });
+    });
+
+
+    $(".js-participate").on("click", function() {
+        $(".js-modal").addClass("active");
+    });
+
+    $(".js-modal").on("click", function() {
+        if ($(event.target).hasClass("js-modal")) $(this).removeClass("active");
+    });
 };

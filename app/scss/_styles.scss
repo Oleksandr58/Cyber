@@ -106,6 +106,7 @@ body {
         padding: 35px 77px;
         text-transform: uppercase;
         text-decoration: none;
+        cursor: pointer;
         transition: all .3s;
 
         &:hover {
@@ -477,11 +478,11 @@ body {
         margin: 118px auto 92px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__rules {
         max-width: 640px;
-        margin: 0 auto;
     }
 
     &__item {
@@ -513,8 +514,8 @@ body {
         cursor: pointer;
     }
 
-    &__video {
-        cursor: pointer;
+    &__form {
+        margin-right: 100px;
     }
 
     &__bottom {
@@ -744,6 +745,89 @@ body {
     }
 }   
 
+.form {
+    width: 302px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    text-align: center;
+
+
+    &__title {
+        color: #fefefe;
+        font-family: "BookAntiqua";
+        font-size: 18px;
+        background-color: #048604;
+        padding: 17px 0 13px 16px;
+        text-align: left;
+        margin-bottom: 35px;
+        border-radius: 3px 3px 0 0;
+    }
+
+    &__input {
+        border: none;
+        padding: 5px 0;
+        width: calc(100% - 44px);
+        margin: 0 auto;
+        border-bottom: 3px rgba(0, 0, 0, 0.5) solid;
+        outline:none;
+        color: #000000;
+        font-family: "BookAntiqua";
+        font-size: 14px;
+        margin-bottom: 17px;
+
+        &:focus {
+            border-bottom: 3px rgba(4,134,4, 0.5) solid;
+        }
+
+        &::placeholder {
+            opacity: 0.5;
+            color: #000000;
+            font-family: "BookAntiqua";
+            font-size: 14px;
+        }
+    }
+
+    &__btn {
+        margin: 10px auto 40px;
+        border-radius: 3px;
+        background-color: #048604;
+        color: #fefefe;
+        font-family: "BookAntiqua";
+        font-size: 12px;
+        padding: 9px 70px;
+        cursor: pointer;
+        transition: background-color .3s;
+        
+        &:hover {
+            background-color: darken(#048604, 10%);
+        }
+    }
+}
+
+.modal {
+    position: fixed;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transform: translateY(-100%);
+    transition: transform .5s;
+
+    &.active {
+        display: block;
+        transform: translateY(0);
+    }
+
+    .form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 @media (max-width: 1340px) {
     .header {
         padding: 17px 20px 0;     
@@ -837,6 +921,23 @@ body {
 
         &__btn {
             padding: 30px;
+        }
+    }
+
+    .participation {
+        &__form {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-right: 0;
+
+            .form {
+                margin: 0 auto;
+            }
+        }
+
+        &__rules {
+            margin: 0 auto;
         }
     }
 }
