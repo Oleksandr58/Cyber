@@ -67,4 +67,7 @@ gulp.task('build', ['clean', 'scss', 'img'], function() {
 
 	var buildJs = gulp.src('app/script.js')
 	.pipe(gulp.dest('docs'));
+
+	var buildTable = gulp.src('app/table/**/*')
+	.pipe(gulp.dest('docs/table'));
 });
