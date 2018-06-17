@@ -43,7 +43,7 @@ window.onload = function() {
         $(".js-modal").addClass("active");
     });
 
-    $(".js-modal").on("click", function() {
+    $(".js-modal").on("click", function(event) {
         if ($(event.target).hasClass("js-modal")) $(this).removeClass("active");
     });
 };

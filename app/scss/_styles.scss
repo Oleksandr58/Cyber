@@ -526,6 +526,7 @@ body {
         font-size: 24px;
         text-align: center;
         line-height: 42px;
+        padding: 0 50px;
 
         &::before {
             content: "";
@@ -806,7 +807,7 @@ body {
 
 .modal {
     position: fixed;
-    background: black;
+    background: rbga(0,0,0, 0.5);
     width: 100vw;
     height: 100vh;
     top: 0;

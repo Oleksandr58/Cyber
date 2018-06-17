@@ -562,7 +562,8 @@ body {
     font-family: "Open Sans";
     font-size: 24px;
     text-align: center;
-    line-height: 42px; }
+    line-height: 42px;
+    padding: 0 50px; }
     .participation__bottom::before {
       content: "";
       width: 150px;
