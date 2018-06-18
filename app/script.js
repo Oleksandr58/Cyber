@@ -5,9 +5,10 @@ window.onload = function() {
     var target = event.currentTarget
     var iframe = document.createElement('iframe')
     
-    iframe.height = target.clientHeight
-    iframe.width = target.clientWidth
-    iframe.src = target.dataset.videoId
+    iframe.height = target.clientHeight;
+    iframe.width = target.clientWidth;
+    iframe.src = target.dataset.videoId;
+    iframe.setAttribute('allowfullscreen', true)
     iframe.setAttribute('frameborder', 0)
     
     target.classList.remove('pristine')
