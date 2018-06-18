@@ -139,6 +139,47 @@ body {
 
     &__item {
         width: 180px;
+
+        &.empty {
+
+            &:not(:last-child) {
+                .prize__caption_text::before {
+                    content: "";
+                    width: 25px;
+                    height: 31px;
+                    position: absolute;
+                    background: url("../img/empty_icon.png");
+                    top: -32px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            
+            .prize {
+                &__caption_text {
+                    text-shadow: 0 2px 4px #000000 !important;
+                    color: #ff3031 !important;
+                }
+
+                &__picture {
+                    &::after {
+                        content: "";
+                        height: 483px !important;
+                        width: 285px !important;
+                        background: url("../img/laptop__shadow__empty.png") no-repeat !important;
+                        position: absolute;
+                        top: -245px  !important;
+                        left: -50px !important;
+                        z-index: -1;
+                    }
+                }
+
+                &__goal {
+                    background-color: #0c6d38;
+                    background-image: linear-gradient(to bottom, #cb0a0a 0%, #cb0a0a 24%, #50070a 73%, #50070a 100%);
+                }
+            }
+        }
         
         &--title {
             width: 320px;
