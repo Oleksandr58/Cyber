@@ -594,7 +594,9 @@ body {
               transform: translate(-50%, 50%); }
 
 .stream {
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  z-index: 3; }
   .stream img {
     width: 100%; }
 
@@ -1231,9 +1233,9 @@ body {
             background-size: 100% 150%; }
     .footer.nowinners {
       margin-top: 0 !important;
-      -webkit-transform: none !important;
-          -ms-transform: none !important;
-              transform: none !important; }
+      -webkit-transform: translate(0) !important;
+          -ms-transform: translate(0) !important;
+              transform: translate(0) !important; }
       .footer.nowinners .footer__logo {
         margin-top: 85px; }
       .footer.nowinners::before {

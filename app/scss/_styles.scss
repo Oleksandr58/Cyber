@@ -556,6 +556,8 @@ body {
 
 .stream {
     cursor: pointer;
+    position: relative;
+    z-index: 3;
 
     & img {
         width: 100%;
@@ -1378,7 +1380,7 @@ body {
 
         &.nowinners {
             margin-top: 0 !important;
-            transform: none !important;
+            transform: translate(0) !important;
 
             .footer__logo {
                 margin-top: 85px;
