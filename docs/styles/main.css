@@ -662,8 +662,6 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 60px 10px 106px;
-    -webkit-mask-image: url("../img/winners__mask.png");
-            mask-image: url("../img/winners__mask.png");
     -webkit-mask-size: 200%;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: bottom center;
@@ -1235,8 +1233,6 @@ body {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-mask-image: none;
-              mask-image: none;
       -webkit-mask-position: 50% 20%;
               mask-position: 50% 20%;
       padding: 0;

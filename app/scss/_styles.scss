@@ -637,7 +637,6 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 60px 10px 106px;
-        mask-image: url("../img/winners__mask.png");
         -webkit-mask-size: 200%;
         -webkit-mask-repeat: no-repeat;
         -webkit-mask-position: bottom center;
@@ -1396,7 +1395,6 @@ body {
 
         &__wrap {
             flex-direction: column;
-            mask-image: none;
             mask-position: 50% 20%;
             padding: 0;
             padding-bottom: 250px;
