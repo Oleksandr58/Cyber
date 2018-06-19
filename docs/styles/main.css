@@ -666,6 +666,8 @@ body {
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: bottom center;
     color: wheat; }
+    .winners__wrap--p_0 {
+      padding: 0; }
   .winners__row {
     counter-reset: item; }
   .winners__winner {
@@ -693,6 +695,11 @@ body {
       font-size: 21px;
       font-weight: 400;
       line-height: 24.73px; }
+  .winners__prize .winners__winner::before {
+    display: none; }
+  .winners__subtitle {
+    font-size: 30px;
+    min-width: 390px; }
   .winners__footer {
     max-width: 1070px;
     margin: 0 auto;
@@ -1245,6 +1252,8 @@ body {
           -ms-flex-line-pack: center;
               align-content: center;
       position: relative; }
+      .winners__wrap--p_0 {
+        display: none; }
     .winners__row {
       margin: 0 auto;
       width: -webkit-fit-content;
@@ -1274,8 +1283,6 @@ body {
       z-index: -1; }
       .winners__prize .winners__winner {
         border-bottom: 2px solid rgba(71, 71, 71, 0.7); }
-        .winners__prize .winners__winner::before {
-          display: none; }
   .footer {
     margin-top: -50px;
     -webkit-background-size: 100% 150%;
