@@ -641,6 +641,10 @@ body {
         -webkit-mask-repeat: no-repeat;
         -webkit-mask-position: bottom center;
         color: wheat;
+
+        &--p_0 {
+            padding: 0;
+        }
     }
 
     &__row {
@@ -678,6 +682,19 @@ body {
             font-weight: 400;
             line-height: 24.73px;
         }
+    }
+
+    &__prize {
+        .winners__winner {
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        min-width: 390px;
     }
 
     &__footer {
@@ -1401,6 +1418,10 @@ body {
             justify-content: center;
             align-content: center;
             position: relative;
+
+            &--p_0 {
+                display: none;
+            }
         }
 
         &__row {
@@ -1433,10 +1454,6 @@ body {
 
             .winners__winner {
                 border-bottom: 2px solid rgba(71, 71, 71, 0.7);
-
-                &::before {
-                    display: none;
-                }
             }
         }
     }
