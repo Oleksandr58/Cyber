@@ -63,12 +63,12 @@ window.onload = function() {
              $(this).find('.form__input[name="twitter"]').addClass("novalid");
         }
         
-        if (! $(this).find('.form__input[name="steam"]').val().trim().length) {
-            event.preventDefault();
-            $(this).find('.form__input[name="steam"]').addClass("novalid");
-        } 
+        // if (! $(this).find('.form__input[name="steam"]').val().trim().length) {
+        //     event.preventDefault();
+        //     $(this).find('.form__input[name="steam"]').addClass("novalid");
+        // } 
 
-        if (($(this).find('.form__input[name="vk"]').val().trim().length || $(this).find('.form__input[name="twitter"]').val().trim().length) && $(this).find('.form__input[name="steam"]').val().trim().length) {
+        if (($(this).find('.form__input[name="vk"]').val().trim().length || $(this).find('.form__input[name="twitter"]').val().trim().length)) {
             sessionStorage.setItem('Registration', 1);
         }
     });
